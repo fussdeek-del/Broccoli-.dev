@@ -3,98 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry's Portfolio</title>
-    
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <tit        le></title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
 
-        body {
-            background-color: #0a0f2c;
-            color: white;
-            font-family: 'Roboto', sans-serif;
-            height: 100vh;
-        }
+            }
+            body{
+                background-color: #021a5c;
+                color: #000000;
+                font-family: 'Roboto', sans-serif;
+            }
 
-        header {
-            background-color: #1a2338;
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #333;
-        }
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 65px;
+                background-color: #042580;
+            }
+            nav ul{
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li{
+                list-style: none;
+                margin: 0 23px;
+                font-size: 1.2rem;
+                
+            }
+            .left{
+                font-size: 1.5rem;
+            }
+            .firstsection{
+                display: flex;
+                justify-content: space-around;
+                margin: 23px;
+            }
 
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 600;
-        }
+            .firstSection div{
+                width: 34%;
+            }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 35px;
-        }
+            .leftSection{
+                background-color: #6e04fa;
+                width: 34%;
+            }   
 
-        nav ul li {
-            cursor: pointer;
-            font-size: 1.05rem;
-            transition: color 0.3s;
-        }
-
-        nav ul li:hover {
-            color: #ff4d4d;
-        }
-
-        .main-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 80px 8%;
-            height: calc(100vh - 70px);
-        }
-
-        .left-bar {
-            background-color: #ff0000;
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.3rem;
-            font-weight: 500;
-            width: 45%;
-        }
-
-        .right-bar {
-            background-color: #ff0000;
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.3rem;
-            font-weight: 500;
-            width: 45%;
-            text-align: right;
-        }
-    </style>
+            .rightSection{
+                background-color: #6e04fa;
+                width: 34%;
+            }   
+        </style>
 </head>
 <body>
     <header>
-        <div class="logo">Harry's Portfolio</div>
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
-            </ul>
+            <div class="left">Harry's Portfolio</div>
+            <div class="left">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-    <div class="main-content">
-        <div class="left-bar">left</div>
-        <div class="right-bar">right</div>
-    </div>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+            left
+        </div>
+        <div class="rightSection">  
+            right
+        </div>
+        </section>
+    </main>
 </body>
 </html>
