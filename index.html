@@ -3,88 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <tit        le></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broccoli Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            }
-            body{
-                background-color: #021a5c;
-                color: #000000;
-                font-family: 'Roboto', sans-serif;
-            }
+        body {
+            background-color: #021a5c;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
 
-            nav{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                height: 65px;
-                background-color: #042580;
-            }
-            nav ul{
-                display: flex;
-                justify-content: center;
-            }
-            nav ul li{
-                list-style: none;
-                margin: 0 23px;
-                font-size: 1.2rem;
-                
-            }
-            .left{
-                font-size: 1.5rem;
-            }
-            .firstsection{
-                display: flex;
-                justify-content: space-around;
-                margin: 23px;
-            }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 65px;
+            background-color: #042580;
+            padding: 0 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-            .firstSection div{
-                width: 34%;
-            }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #6e04fa;
+        }
 
-            .leftSection{
-                background-color: #6e04fa;
-                width: 34%;
-            }   
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
 
-            .rightSection{
-                background-color: #6e04fa;
-                width: 34%;
-            }   
-        </style>
+        nav ul li {
+            margin: 0 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #6e04fa;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 5%;
+            gap: 40px;
+        }
+
+        .leftSection, .rightSection {
+            flex: 1;
+            padding: 40px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #6e04fa, #042580);
+        }
+
+        .leftSection {
+            min-height: 450px;
+        }
+
+        .rightSection {
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ffffff;
+            color: #021a5c;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #6e04fa;
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="left">Broccoli portfolio</div>
-            <div class="left">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
-                </ul>
-            </div>
+            <div class="logo">Broccoli</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Contact Me</li>
+            </ul>
         </nav>
     </header>
+
     <main>
         <section class="firstSection">
-            <div class=" leftSection">
-            left
-        </div>
-        <div class="rightScreen">  
-        </div>
+            <div class="leftSection">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span style="color:#fff;">Broccoli</span></h1>
+                    <p>A passionate developer & designer creating beautiful digital experiences.</p>
+                    <button class="btn">Download Resume</button>
+                </div>
+            </div>
 
-
+            <div class="rightSection">
+                <!-- You can put an image, illustration, or profile picture here -->
+                <p>Your Profile Image / Illustration Goes Here</p>
+            </div>
         </section>
     </main>
 </body>
